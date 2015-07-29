@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+	<!-- author:javan -->
+	<!-- description:$2 -->
+]]></content>
+	<tabTrigger>zhushi</tabTrigger>
+	<scope>text.html</scope>
+</snippet>

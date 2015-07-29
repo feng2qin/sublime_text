@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="Keywords"	content="$1"/>
+	<meta name="Description" content="$2"/>
+	<title>$3</title>	
+</head>
+<body>
+	$4
+</body>
+</html>]]></content>
+	<tabTrigger>html5</tabTrigger>
+	<scope>text.html</scope>
+</snippet>

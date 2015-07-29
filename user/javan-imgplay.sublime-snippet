@@ -1,0 +1,68 @@
+<snippet>
+	<content><![CDATA[
+<script src="js/jquery.SuperSlide.js"></script>
+<style>
+.slideBox {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.slideBox .hd {
+  height: 10px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 4px;
+  z-index: 1;
+  width: 81px;
+  /* background: url(../images/btnBg.png) no-repeat;*/
+  margin-left: -46px;
+  left: 50%;
+  padding: 4px 0px 0px 11px;
+}
+
+.slideBox .hd ul {
+  zoom: 1;
+}
+
+/*.slideBox .hd ul li{ float: left; width: 6px; height: 6px; background: url(../images/btn1.png) no-repeat; cursor: pointer; margin-right: 10px; }
+.slideBox .hd ul li.on{ background: url(../images/btn2.png) no-repeat; }*/
+.slideBox .bd {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+
+.slideBox .bd ul, .slideBox .bd ul li {
+  width: 100% !important
+}
+
+.slideBox .bd img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
+<div id="slideBox" class="slideBox">
+    <div class="hd">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="bd">
+      <ul>
+        <li><a href="javascript:;"><img src="${1:http://cdn.dlodlo.com/images/img54.jpg}" width="100%"/></a></li>
+        <li><a href="javascript:;"><img src="${2:http://cdn.dlodlo.com/images/img58.jpg}" width="100%"/></a></li>
+        <li><a href="javascript:;"><img src="${3:http://cdn.dlodlo.com/images/img59.jpg}" width="100%"/></a></li>
+      </ul>
+    </div>
+  </div>
+  <script language="javascript">
+    jQuery(".slideBox").slide({mainCell: ".bd ul", effect: "${4:fold}", autoPlay: true});
+  </script>
+]]></content>
+	<tabTrigger>imgplay</tabTrigger>
+	<scope>text.html</scope>
+</snippet>
